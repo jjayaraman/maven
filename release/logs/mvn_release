@@ -1,0 +1,136 @@
+C:\Git_Jay\maven\release>mvn release:prepare
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building release 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-release-plugin:2.5.3:prepare (default-cli) @ release ---
+[INFO] Verifying that there are no local modifications...
+[INFO]   ignoring changes on: **\pom.xml.next, **\release.properties, **\pom.xml.branch, **\pom.xml.tag, **\pom.xml.backup, **\pom.xml.releaseBackup
+[INFO] Executing: cmd.exe /X /C "git rev-parse --show-toplevel"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Executing: cmd.exe /X /C "git status --porcelain ."
+[INFO] Working directory: C:\Git_Jay\maven\release
+[WARNING] Ignoring unrecognized line: ?? release/.classpath
+[WARNING] Ignoring unrecognized line: ?? release/.gitignore
+[WARNING] Ignoring unrecognized line: ?? release/.project
+[WARNING] Ignoring unrecognized line: ?? release/.settings/
+[WARNING] Ignoring unrecognized line: ?? release/pom.xml
+[WARNING] Ignoring unrecognized line: ?? release/release.properties
+[WARNING] Ignoring unrecognized line: ?? release/src/
+[INFO] Checking dependencies and plugins for snapshots ...
+What is the release version for "release"? (com.jai.maven:release) 0.0.1: :
+What is SCM release tag or label for "release"? (com.jai.maven:release) release-0.0.1: :
+What is the new development version for "release"? (com.jai.maven:release) 0.0.2-SNAPSHOT: :
+[INFO] Transforming 'release'...
+[INFO] Not generating release POMs
+[INFO] Executing goals 'clean verify'...
+[WARNING] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] [INFO] Scanning for projects...
+[INFO] [INFO]
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO] Building release 0.0.1
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO]
+[INFO] [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ release ---
+[INFO] [INFO] Deleting C:\Git_Jay\maven\release\target
+[INFO] [INFO]
+[INFO] [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ release ---
+[INFO] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] [INFO] skip non existing resourceDirectory C:\Git_Jay\maven\release\src\main\resources
+[INFO] [INFO]
+[INFO] [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ release ---
+[INFO] [INFO] Changes detected - recompiling the module!
+[INFO] [INFO] Compiling 1 source file to C:\Git_Jay\maven\release\target\classes
+[INFO] [INFO]
+[INFO] [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ release ---
+[INFO] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] [INFO] skip non existing resourceDirectory C:\Git_Jay\maven\release\src\test\resources
+[INFO] [INFO]
+[INFO] [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ release ---
+[INFO] [INFO] Changes detected - recompiling the module!
+[INFO] [INFO] Compiling 1 source file to C:\Git_Jay\maven\release\target\test-classes
+[INFO] [INFO]
+[INFO] [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ release ---
+[INFO] [INFO] Surefire report directory: C:\Git_Jay\maven\release\target\surefire-reports
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.jai.maven.release.AppTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+[INFO]
+[INFO] Results :
+[INFO]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] [INFO]
+[INFO] [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ release ---
+[INFO] [INFO] Building jar: C:\Git_Jay\maven\release\target\release-0.0.1.jar
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO] BUILD SUCCESS
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO] Total time: 1.753 s
+[INFO] [INFO] Finished at: 2017-10-17T17:11:15+01:00
+[INFO] [INFO] Final Memory: 18M/316M
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] Checking in modified POMs...
+[INFO] Executing: cmd.exe /X /C "git add -- pom.xml"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Executing: cmd.exe /X /C "git rev-parse --show-toplevel"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Executing: cmd.exe /X /C "git status --porcelain ."
+[INFO] Working directory: C:\Git_Jay\maven\release
+[WARNING] Ignoring unrecognized line: ?? release/.classpath
+[WARNING] Ignoring unrecognized line: ?? release/.gitignore
+[WARNING] Ignoring unrecognized line: ?? release/.project
+[WARNING] Ignoring unrecognized line: ?? release/.settings/
+[WARNING] Ignoring unrecognized line: ?? release/pom.xml.releaseBackup
+[WARNING] Ignoring unrecognized line: ?? release/release.properties
+[WARNING] Ignoring unrecognized line: ?? release/src/
+[INFO] Executing: cmd.exe /X /C "git commit --verbose -F C:\Users\JJAYAR~1.EBA\AppData\Local\Temp\maven-scm-1188281103.commit pom.xml"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Executing: cmd.exe /X /C "git symbolic-ref HEAD"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Executing: cmd.exe /X /C "git push https://github.com/jjayaraman/maven refs/heads/master:refs/heads/master"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Tagging release with the label release-0.0.1...
+[INFO] Executing: cmd.exe /X /C "git tag -F C:\Users\JJAYAR~1.EBA\AppData\Local\Temp\maven-scm-601802404.commit release-0.0.1"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Executing: cmd.exe /X /C "git push https://github.com/jjayaraman/maven refs/tags/release-0.0.1"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Executing: cmd.exe /X /C "git ls-files"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Transforming 'release'...
+[INFO] Not removing release POMs
+[INFO] Checking in modified POMs...
+[INFO] Executing: cmd.exe /X /C "git add -- pom.xml"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Executing: cmd.exe /X /C "git rev-parse --show-toplevel"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Executing: cmd.exe /X /C "git status --porcelain ."
+[INFO] Working directory: C:\Git_Jay\maven\release
+[WARNING] Ignoring unrecognized line: ?? release/.classpath
+[WARNING] Ignoring unrecognized line: ?? release/.gitignore
+[WARNING] Ignoring unrecognized line: ?? release/.project
+[WARNING] Ignoring unrecognized line: ?? release/.settings/
+[WARNING] Ignoring unrecognized line: ?? release/pom.xml.releaseBackup
+[WARNING] Ignoring unrecognized line: ?? release/release.properties
+[WARNING] Ignoring unrecognized line: ?? release/src/
+[INFO] Executing: cmd.exe /X /C "git commit --verbose -F C:\Users\JJAYAR~1.EBA\AppData\Local\Temp\maven-scm-535997464.commit pom.xml"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Executing: cmd.exe /X /C "git symbolic-ref HEAD"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Executing: cmd.exe /X /C "git push https://github.com/jjayaraman/maven refs/heads/master:refs/heads/master"
+[INFO] Working directory: C:\Git_Jay\maven\release
+[INFO] Release preparation complete.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:39 min
+[INFO] Finished at: 2017-10-17T17:11:33+01:00
+[INFO] Final Memory: 12M/309M
+[INFO] ------------------------------------------------------------------------
+
+C:\Git_Jay\maven\release>

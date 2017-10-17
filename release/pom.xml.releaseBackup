@@ -3,7 +3,7 @@
 
 	<groupId>com.jai.maven</groupId>
 	<artifactId>release</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>release</name>
@@ -24,7 +24,6 @@
 
 	<scm>
 		<connection>scm:git:https://github.com/jjayaraman/maven</connection>
-		<tag>HEAD</tag>
 	</scm>
 
 	<build>
